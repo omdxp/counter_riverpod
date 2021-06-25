@@ -12,10 +12,10 @@ class CounterChangeNotifier extends ChangeNotifier {
   }
 }
 
-// class CounterStateNotifier extends StateNotifier {
-//   CounterStateNotifier({int count}) : super(count ?? 0);
+class CounterStateNotifier extends StateNotifier<int> {
+  CounterStateNotifier() : super(0);
 
-//   void increment() {
-//     state++;
-//   }
-// }
+  void increment() {
+    state++;
+  }
+}
